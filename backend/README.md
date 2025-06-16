@@ -31,6 +31,14 @@
 $ pnpm install
 ```
 
+Create a `.env` file based on the provided `.env.example` and set the
+MongoDB connection string and JWT secret:
+
+```bash
+$ cp .env.example .env
+# edit .env and adjust variables
+```
+
 ## Compile and run the project
 
 ```bash
