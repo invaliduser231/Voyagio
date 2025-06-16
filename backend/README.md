@@ -31,6 +31,26 @@
 $ pnpm install
 ```
 
+Create a `.env` file based on the provided `.env.example` and set the
+MongoDB connection string and JWT secret:
+
+```bash
+# from within the backend folder
+$ cp .env.example .env
+# edit .env and adjust variables
+# for docker-compose set `MONGO_URI=mongodb://mongo:27017/voyagio`
+```
+
+### Docker
+
+To start the API with a local MongoDB instance run:
+
+```bash
+$ docker-compose up --build
+```
+
+The server will be available at <http://localhost:3000>.
+
 ## Compile and run the project
 
 ```bash
